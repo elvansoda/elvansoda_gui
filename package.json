@@ -1,0 +1,22 @@
+{
+  "name": "elvansoda_gui",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elvansoda/elvansoda_gui.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elvansoda/elvansoda_gui/issues"
+  },
+  "homepage": "https://github.com/elvansoda/elvansoda_gui#readme",
+  "dependencies": {
+    "electron": "^6.0.10"
+  }
+}

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pay</title>
+    <link rel="stylesheet" type="text/css" href="/css/master.css" />
+    <link rel="stylesheet" type="text/css" href="/css/popup.css" />
+  </head>
+  <body>
+    <link rel="text/javascript" href="/public/src/button_action.js" />
+    <div class="popup">
+      <img id="question" src="/image/question" alt="not found" />
+      <h1 class="text">결제하시겠습니까?</h1>
+    </div>
+    <div class="popup">
+      <input type="button" class="button" onclick="self.close()" value="No" />
+      <input type="button" class="button" onclick="pay();" value="Yes" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>ElvanSoda</title>
+    <link rel="stylesheet" type="text/css" href="../css/master.css" />
+    <link rel="stylesheet" type="text/css" href="../css/index.css" />
+  </head>
+  <body>
+    <script>
+      const popup_width = window.screen.width / 2 - 250;
+      const popup_height = window.screen.height / 2 - 110;
+
+      socket.emit("new Access");
+
+      socket.on("data updated", data => {
+        console.log("Data: ", data);
+        let td1 = document.getElementsByClassName("td_0");
+        let td2 = document.getElementsByClassName("td_1");
+        let td3 = document.getElementsByClassName("td_2");
+
+        if (data) {
+          for (var i = 0; i < data.length; i++) {
+            td1[i].textContent = data[i].ProductName;
+            td2[i].textContent = data[i].Amount;
+            td3[i].textContent = data[i].TotalPrice;
+          }
+        }
+      });
+
+      socket.on("data clear", () => {
+        console.log("data clear request");
+        let td1 = document.getElementsByClassName("td_0");
+        let td2 = document.getElementsByClassName("td_1");
+        let td3 = document.getElementsByClassName("td_2");
+
+        for (var i = 0; i < td1.length; i++) {
+          td1[i].textContent = "";
+          td2[i].textContent = "";
+          td3[i].textContent = "";
+        }
+      });
+
+      function cancel() {
+        console.log("Cancel button clicked");
+        window.open(
+          "popup/clear",
+          "c",
+          "menubar=no, width=500, height=220, left=" +
+            popup_width +
+            ", top=" +
+            popup_height
+        );
+      }
+
+      function pay() {
+        console.log("Pay button clicked");
+        window.open(
+          "popup/pay",
+          "p",
+          "menubar=no, width=500, height=220, left=" +
+            popup_width +
+            ", top=" +
+            popup_height
+        );
+      }
+    </script>
+    <div class="left-box">
+      <table class="product_table">
+        <tr>
+          <th>상품명</th>
+          <th style="width: 20%">수량</th>
+          <th style="width: 30%">가격</th>
+        </tr>
+        <tr>
+          <script>
+            for (var i = 0; i < 20; i++) {
+              let tr = document.createElement("tr");
+              tr.className = "data_tr";
+              document
+                .getElementsByClassName("product_table")[0]
+                .appendChild(tr);
+
+              for (var j = 0; j < 3; j++) {
+                let td = document.createElement("td");
+                td.className = "td_" + j;
+                document.getElementsByClassName("data_tr")[i].appendChild(td);
+              }
+            }
+          </script>
+        </tr>
+      </table>
+    </div>
+    <div class="right-box">
+      <img class="icon" src="images/1024x1024.png" />
+      <h1 id="title" style="text-align: left;">총금액:</h1>
+      <input
+        class="button"
+        onclick="cancel();"
+        id="btn1"
+        type="button"
+        value="취소"
+      />
+      <input
+        class="button"
+        onclick="pay();"
+        id="btn2"
+        type="button"
+        value="결제"
+      />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+.Text {
+  font-size: 30px;
+  margin-right: 5%;
+}
+
+.popup {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  position: relative;
+  margin-bottom: 3%;
+}
+
+.button {
+  width: 160px;
+  height: 100px;
+  font-size: 20pt;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+img {
+  width: 13%;
+  height: 13%;
+  margin-right: 5%;
+}
