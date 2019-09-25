@@ -13,7 +13,7 @@ td {
   color: black;
 }
 
-#title {
+#totalPrice {
   color: #469536;
   font-size: 50px;
 }
@@ -43,11 +43,11 @@ td {
   font-size: 40px;
 }
 
-#btn1 {
+#cancel {
   background-color: rgb(68, 68, 68);
 }
 
-#btn2 {
+#pay {
   background-color: #469536;
 }
 

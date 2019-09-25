@@ -3,29 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <title>Clear</title>
-    <link rel="stylesheet" type="text/css" href="/css/master.css" />
-    <link rel="stylesheet" type="text/css" href="/css/popup.css" />
+    <link rel="stylesheet" type="text/css" href="../css/master.css" />
+    <link rel="stylesheet" type="text/css" href="../css/popup.css" />
   </head>
   <body>
-    <script src="../socket.io/socket.io.js"></script>
-    <script>
-      var socket = io();
-
-      function clear_data() {
-        console.log("data clear request");
-        socket.emit("clear data");
-        self.close();
-      }
-
-      function pay() {}
-    </script>
     <div class="popup">
-      <img src="/image/question" alt="not found" />
+      <img id="question" src="../img/question.png" alt="not found" />
       <h1 class="Text">초기화하시겠습니까?</h1>
     </div>
     <div class="popup">
-      <input type="button" class="button" onclick="self.close()" value="No" />
-      <input type="button" class="button" onclick="clear_data()" value="Yes" />
+      <input type="button" class="button" id="no" value="No" />
+      <input type="button" class="button" id="yes" value="Yes" />
     </div>
+
+    <script src="../../lib/renderer/popup.js"></script>
   </body>
 </html>

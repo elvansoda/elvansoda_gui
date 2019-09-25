@@ -4,7 +4,8 @@ let win;
 
 app.on("ready", () => {
   win = new BrowserWindow({
-    fullscreen: true,
+    kiosk: true,
+    // autoHideMenuBar: true,
     webPreferences: {
       nodeIntegration: true
     }

@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "electromon ."
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,11 @@
   },
   "homepage": "https://github.com/elvansoda/elvansoda_gui#readme",
   "dependencies": {
-    "electron": "^6.0.10"
+    "electron": "^6.0.10",
+    "onoff": "^5.0.0",
+    "serialport": "^7.1.5"
+  },
+  "devDependencies": {
+    "electromon": "^1.0.10"
   }
 }
