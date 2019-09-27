@@ -8,37 +8,26 @@
   </head>
   <body>
     <div class="left-box">
-      <table class="product_table">
-        <tr>
-          <th style="width: 50%">상품명</th>
-          <th style="width: 20%">수량</th>
-          <th style="width: 30%">가격</th>
-        </tr>
-        <tr>
-          <script>
-            for (var i = 0; i < 20; i++) {
-              let tr = document.createElement("tr");
-              tr.className = "data_tr";
-              document
-                .getElementsByClassName("product_table")[0]
-                .appendChild(tr);
-
-              for (var j = 0; j < 3; j++) {
-                let td = document.createElement("td");
-                td.className = "td_" + j;
-                document.getElementsByClassName("data_tr")[i].appendChild(td);
-              }
-            }
-          </script>
-        </tr>
-      </table>
+      <div id="table_data">
+        <table id="product_table">
+          <thead>
+            <th style="width: 50%">상품명</th>
+            <th style="width: 20%">수량</th>
+            <th style="width: 30%">가격</th>
+          </thead>
+          <tbody></tbody>
+        </table>
+      </div>
     </div>
     <div class="right-box">
       <img class="icon" src="../img/1024x1024.png" />
       <h1 id="totalPrice" style="text-align: left;">총금액:</h1>
-      <input class="button" id="cancel" type="button" value="취소" />
-      <input class="button" id="pay" type="button" value="결제" />
+      <div style="width: 100%">
+        <input class="button" id="cancel" type="button" value="취소" />
+        <input class="button" id="pay" type="button" value="결제" />
+      </div>
     </div>
     <script src="../../lib/renderer/mainProcess.js"></script>
+    <script src="../../lib/renderer/mainView.js"></script>
   </body>
 </html>

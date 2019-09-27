@@ -1,8 +1,4 @@
-tr {
-  width: 100%;
-}
-
-th,
+thead,
 td {
   border: 2px solid lightgray;
 }
@@ -19,10 +15,8 @@ td {
 }
 
 .icon {
-  width: 60%;
-  height: 60%;
-  display: block;
-  margin: 0px auto;
+  width: 80%;
+  height: 80%;
 }
 
 .left-box {
@@ -31,14 +25,16 @@ td {
 }
 
 .right-box {
+  display: flex;
   float: right;
   width: 40%;
-  text-align: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 .button {
   color: white;
-  width: 46%;
+  width: 48%;
   height: 120px;
   font-size: 40px;
 }
@@ -51,7 +47,7 @@ td {
   background-color: #469536;
 }
 
-.product_table {
+#product_table {
   width: 100%;
   background-color: rgb(160, 160, 160);
   border-collapse: collapse;
