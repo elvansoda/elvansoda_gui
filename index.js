@@ -1,6 +1,8 @@
-const { app, BrowserWindow } = require("electron");
+const { app, BrowserWindow, ipcMain } = require("electron");
 
 let win;
+
+const data = require("./lib/common/data.json");
 
 app.on("ready", () => {
   win = new BrowserWindow({
@@ -25,4 +27,8 @@ app.on("activate", () => {
   if (win === null) {
     createWindow();
   }
+});
+
+ipcMain.on("json-data-request", event => {
+  event.reply("json-data-response", data);
 });
