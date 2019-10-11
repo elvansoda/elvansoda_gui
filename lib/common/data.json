@@ -2,5 +2,9 @@
   "apple": {
     "productName": "apple",
     "price": 1600
+  },
+  "사과": {
+    "productName": "사과",
+    "price": 2000
   }
 }
