@@ -2,6 +2,10 @@
   font-size: 15vh;
 }
 
+.text2 {
+  font-size: 10vh;
+}
+
 .popup {
   display: flex;
   flex-direction: row;

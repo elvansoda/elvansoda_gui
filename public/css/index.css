@@ -32,7 +32,7 @@ td {
   flex-direction: column;
 }
 
-.button {
+button {
   color: white;
   width: 48%;
   height: 120px;

@@ -1,10 +1,17 @@
 {
   "apple": {
     "productName": "apple",
-    "price": 1600
+    "price": 1600,
+    "isCertRequired": false
   },
   "사과": {
     "productName": "사과",
-    "price": 2000
+    "price": 2000,
+    "isCertRequired": false
+  },
+  "참이술": {
+    "productName": "참이슬",
+    "price": 2000,
+    "isCertRequired": true
   }
 }
