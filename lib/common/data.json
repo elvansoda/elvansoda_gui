@@ -1,17 +1,32 @@
 {
-  "apple": {
-    "productName": "apple",
-    "price": 1600,
+  " 10 0A 65 DA": {
+    "productName": "todnRkd",
+    "price": 700,
     "isCertRequired": false
   },
-  "사과": {
-    "productName": "사과",
+  " 70 89 65 DA": {
+    "productName": "Whfqud",
     "price": 2000,
     "isCertRequired": false
   },
-  "참이술": {
+  " 50 91 65 DA": {
     "productName": "참이슬",
     "price": 2000,
     "isCertRequired": true
+  },
+  "90 91 65 DA": {
+    "productName": "tozhaekfzha",
+    "price": 500,
+    "isCertRequired": false
+  },
+  " 70 D9 65 DA": {
+    "productName": "zkscy",
+    "price": 500,
+    "isCertRequired": false
+  },
+  " 80 D9 65 DA": {
+    "producctName": "dhfpswldpdlem",
+    "price": 500,
+    "isCertRequired": false
   }
 }
