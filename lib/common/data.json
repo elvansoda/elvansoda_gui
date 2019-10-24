@@ -1,4 +1,5 @@
 {
+
   " 10 0A 65 DA": {
     "productName": "새우깡",
     "price": 700,
@@ -6,13 +7,13 @@
   },
   " 70 89 65 DA": {
     "productName": "쫄병",
-    "price": 2000,
+    "price": 1000,
     "isCertRequired": false
   },
   " 50 91 65 DA": {
     "productName": "레쓰비",
-    "price": 2000,
-    "isCertRequired": true
+    "price": 800,
+    "isCertRequired": false
   },
   " 90 91 65 DA": {
     "productName": "새콤달콤",
@@ -21,12 +22,12 @@
   },
   " 70 D9 65 DA": {
     "productName": "칸쵸",
-    "price": 500,
+    "price": 1000,
     "isCertRequired": false
   },
-  " 80 D9 65 DA": {
-    "producctName": "오렌지에이드",
-    "price": 500,
+  " B0 D9 65 DA": {
+    "productName": "물",
+    "price": 1000,
     "isCertRequired": false
   },
   " D0 95 65 DA": {
@@ -36,7 +37,17 @@
   },
   " 40 C1 64 DA": {
     "productName": "꼬꼬면",
-    "price": 3000,
+    "price": 750,
+    "isCertRequired": false
+  },
+  " A0 A7 65 DA": {
+    "productName": "처음*럼",
+    "price": 1310,
+    "isCertRequired": true
+  },
+  " 20 C8 65 DA": {
+    "productName": "목캔디",
+    "price": 700,
     "isCertRequired": false
   }
 }

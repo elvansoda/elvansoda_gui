@@ -11,7 +11,7 @@ app.on('ready', () => {
     },
   });
 
-  win.webContents.openDevTools();
+  // win.webContents.openDevTools();
   win.loadURL(`file://${__dirname}/public/html/index.html`);
   win.on('closed', () => {
     win = null;
@@ -27,3 +27,7 @@ app.on('activate', () => {
     createWindow();
   }
 });
+
+ipcMain.on('close_tab', (event, data) => {
+  event.sender.send('close_tab_b', data);
+})

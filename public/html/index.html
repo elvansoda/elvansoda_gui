@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>ElvanSoda</title>
-    <link rel="stylesheet" type="text/css" href="../css/master.css" />
-    <link rel="stylesheet" type="text/css" href="../css/index.css" />
-  </head>
-  <body>
-    <div class="left-box">
-      <div id="table_data">
-        <table id="product_table">
-          <thead>
-            <th style="width: 50%">상품명</th>
-            <th style="width: 20%">수량</th>
-            <th style="width: 30%">가격</th>
-          </thead>
-        </table>
-      </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>ElvanSoda</title>
+  <link rel="stylesheet" type="text/css" href="../css/master.css" />
+  <link rel="stylesheet" type="text/css" href="../css/index.css" />
+</head>
+
+<body>
+  <div class="left-box">
+    <div id="table_data">
+      <table id="product_table">
+        <thead>
+          <th style="width: 50%">상품명</th>
+          <th style="width: 20%">수량</th>
+          <th style="width: 30%">가격</th>
+        </thead>
+      </table>
     </div>
-    <div class="right-box">
-      <img class="icon" src="../img/1024x1024.png" />
-      <h1 id="totalPrice" style="text-align: left;">총금액:</h1>
-      <div style="width: 100%">
-        <button id="cancel">취소</button>
-        <button id="pay">결제</button>
-      </div>
+  </div>
+  <div class="right-box">
+    <img class="icon" src="../img/1024x1024.png" />
+    <div class="total-price">
+      <h1 id="totalPrice">총금액: 0</h1>
     </div>
-    <script src="../../lib/renderer/mainProcess.js"></script>
-    <script src="../../lib/renderer/mainView.js"></script>
-  </body>
+    <div style="width: 100%">
+      <button id="cancel">취소</button>
+      <button id="pay">결제</button>
+    </div>
+  </div>
+  <script src="../../lib/renderer/mainProcess.js"></script>
+  <script src="../../lib/renderer/mainView.js"></script>
+</body>
+
 </html>

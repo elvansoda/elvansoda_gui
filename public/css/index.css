@@ -5,7 +5,7 @@ td {
 
 td {
   background-color: rgb(240, 240, 240);
-  height: 24px;
+  height: 30px;
   color: black;
 }
 
@@ -32,6 +32,11 @@ td {
   flex-direction: column;
 }
 
+.total-price {
+  flex-direction: row;
+  align-items: flex-start;
+  align-self: flex-start;
+}
 button {
   color: white;
   width: 48%;
