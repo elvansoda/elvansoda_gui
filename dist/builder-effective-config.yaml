@@ -1,0 +1,22 @@
+directories:
+  output: dist
+  buildResources: build
+appId: com.raspi.elvansoda
+productName: Elvansoda
+protocols:
+  name: Elvansoda
+  schemes:
+    - Elvansoda
+files:
+  - filter:
+      - index.js
+linux:
+  target:
+    target: deb
+    arch: armv7l
+  category: Development
+deb:
+  fpm:
+    - '--architecture'
+    - armhf
+electronVersion: 6.1.2

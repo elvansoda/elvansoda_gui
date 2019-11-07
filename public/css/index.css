@@ -3,9 +3,12 @@ td {
   border: 2px solid lightgray;
 }
 
+th {
+  height: 34px;
+}
 td {
   background-color: rgb(240, 240, 240);
-  height: 30px;
+  height: 34px;
   color: black;
 }
 
@@ -56,4 +59,5 @@ button {
   width: 100%;
   background-color: rgb(160, 160, 160);
   border-collapse: collapse;
+  font-size: 2vh; 
 }
